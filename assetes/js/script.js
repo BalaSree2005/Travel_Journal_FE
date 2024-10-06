@@ -1,3 +1,31 @@
+
+
+const footerContent = `
+<footer>
+        <div class="foot">
+            <h6>&copy; Copyright Reserved..!</h6>
+        </div>
+        <div class="images" id="logos">
+            <img src="./assetes/images/icon-twitter.svg" alt="Twitter Logo">
+            <img src="./assetes/images/icon-facebook.svg" alt="Facebook Logo">
+            <img src="./assetes/images/icon-instagram.svg" alt="Instagram Logo">
+        </div>
+    </footer>`;
+
+
+    document.getElementById('footer').innerHTML = footerContent;
+
+
+
+
+
+
+
+
+
+
+
+
 ///////////register page
 
 document.addEventListener('DOMContentLoaded', function () {
