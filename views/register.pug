@@ -1,0 +1,95 @@
+doctype html
+html
+  head
+    title Overlay Card
+    link(rel="stylesheet" href="/style_1.css")
+  body
+    .overlay-card
+      h2 Choose Your Registration Type
+      .buttons
+        button#user-btn(type="button") User
+        button#agent-btn(type="button") Agent
+
+    script(src="/assets/js/script.js")
+    script(src="/app.js")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//- doctype html
+//- html(lang="en")
+//-   head
+//-     meta(charset="UTF-8")
+//-     meta(name="viewport" content="width=device-width, initial-scale=1.0")
+//-     title Registration Page
+//-     link(rel="stylesheet", href="./assetes/css/style.css")
+
+//-   body
+//-     #header
+//- main
+//-   img(src="./assetes/images/gif-3.gif", alt="no image", id="gif")
+//-   .container#form
+//-     .form-group 
+//-       label Register as:
+//-       button#customerButton.block(type="button") Customer
+//-       button#agentButton.block(type="button") Travel Agent
+
+//-     // Customer Registration Form
+//-     form#customerForm(action="/register", method="post", style="display: none;")
+//-       input(type="hidden", name="role", value="customer")  // Hidden role field
+//-       fieldset
+//-         legend Customer Details
+//-         .form-group
+//-           label(for="username") Username
+//-           input(type="text", name="username", id="username")
+//-         .form-group
+//-           label(for="email") E-mail
+//-           input(type="email", name="email", id="email")
+//-         .form-group
+//-           label(for="password") Password
+//-           input(type="password", name="password", id="password")
+//-         .form-group
+//-           label(for="phone") Phone Numbers
+//-           input(type="tel", name="phone", id="phone")
+//-         .form-group
+//-           label(for="city") City
+//-           input(type="text", name="city", id="city")
+//-       button.block(type="submit") Register as Customer
+
+//-     // Travel Agent Registration Form
+//-     form#agentForm(action="/register", method="post", style="display: none;")
+//-       input(type="hidden", name="role", value="agent")  // Hidden role field
+//-       fieldset
+//-         legend Travel Agent Details
+//-         .form-group
+//-           label(for="agentName") Name
+//-           input(type="text", name="username", id="agentName")
+//-         .form-group
+//-           label(for="agentEmail") E-mail
+//-           input(type="email", name="email", id="agentEmail")
+//-         .form-group
+//-           label(for="agentPassword") Password
+//-           input(type="password", name="password", id="agentPassword")
+//-         .form-group
+//-           label(for="agentPhone") Phone Numbers
+//-           input(type="tel", name="phone", id="agentPhone")
+//-         .form-group
+//-           label(for="agentId") Travel Agent ID
+//-           input(type="text", name="agentid", id="agentId")
+//-       button.block(type="submit") Register as Agent
+
+
+//-     #footer
+
+//-     script(src="./assetes/js/script.js")

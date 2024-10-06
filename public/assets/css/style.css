@@ -334,6 +334,153 @@ button .search-icon {
 }
 
 /* Register page */
+
+/* General styles */
+/* General styling */
+nav {
+    /* background-color: #333; */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    /* background-color: #575757; */
+    border-radius: 4px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+form input[type="tel"] {
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Button styles for switching forms */
+.form-selection-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button.form-switch {
+    padding: 12px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.form-switch:hover {
+    background-color: #0056b3;
+}
+
+/* Hide the travel agent form initially */
+#agentForm {
+    display: none;
+}
+
+/* For mobile devices */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    button.form-switch {
+        width: 45%;
+        margin: 5px;
+    }
+}
+
 form {
     max-width: 600px;
     margin: 40px auto;
@@ -630,19 +777,27 @@ table:hover {
 }
 
 
+main {
+    flex: 1; /* This makes the main content expand to fill available space */
+}
 
 footer {
-    margin-top: auto;
     background-color:#EAD8B1; /* Background color for the footer */
     font-size: larger;
     color: black; /* Text color */
-    text-align: center; /* Center align text */
-padding: 20px 0;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+
+/* Style for the copyright text and spacing between logos */
 .foot {
     margin-bottom: 10px; /* Space between copyright text and logos */
 }
 
+/* Flexbox layout for logos */
 .images {
     color: white;
     display: flex; /* Use flexbox for alignment */
@@ -650,6 +805,7 @@ padding: 20px 0;
     gap: 15px; /* Space between logos */
 }
 
+/* Style for the images/logos */
 .images img {
     color: white;
     width: 30px; /* Set logo width */
@@ -657,6 +813,7 @@ padding: 20px 0;
     transition: transform 0.3s; /* Add transition for hover effect */
 }
 
+/* Hover effect on logos */
 .images img:hover {
     transform: scale(1.1); /* Slight zoom effect on hover */
 }

@@ -1,0 +1,49 @@
+extends layout 
+
+block content-head 
+  title Welcome to Travel Journey 
+
+block content-body 
+  h1 Welcome to the Travel Journal Website!
+  p Click on the registration options to get started.
+
+  //- section.hero
+  //-   h1 Explore, Experience, and Express Your Travels!
+
+  //- section.search-section
+  //-   .search-form
+  //-     h2 Search Your Destination 
+  //-     form(action="/search_destination" method="post")
+  //-       select(name="from" required)
+  //-         option(value="" disabled selected) Source
+  //-         each airport in airports
+  //-           option(value=airport.place_name) #{airport.place_name} (#{airport.place_name})
+        
+  //-       select(name="to" required)
+  //-         option(value="" disabled selected) Destination
+  //-         each airport in airports
+  //-           option(value=airport.place_name) #{airport.place_name} (#{airport.place_name})
+
+  //-       select(name="passengers" required)
+  //-         option(value="" disabled selected) Transport Type
+  //-         option(value="1") Bus
+  //-         option(value="2") Train
+  //-         option(value="3") Flight
+  //-         option(value="4") Other
+
+  //-       input(type="date" name="date" required)
+  //-       button(type="submit") Find
+
+  //- section.features
+  //-   .feature
+  //-     img(src="./assets/img/easy_booking.jpg" alt="Easy Booking")
+  //-     h3 Multiple Payment Options
+  //-     p Accept various payment methods including credit/debit cards, PayPal, and mobile wallets.
+  //-   .feature
+  //-     img(src="./assets/img/best_price.jpg" alt="Best Prices")
+  //-     h3 Flexibility
+  //-     p Offer installment payments for flight or vacation packages.
+  //-   .feature
+  //-     img(src="./assets/img/support.jpg" alt="24/7 Support")
+  //-     h3 Itinerary Builder
+  //-     p Allow users to create detailed travel itineraries, including must-see landmarks and daily plans.
