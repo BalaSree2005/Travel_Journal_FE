@@ -2,6 +2,7 @@
   {
     "first_name": "komali bhavani",
     "email": "komali221fa04015@gmail.com",
+<<<<<<< HEAD
     "password": "654321",
     "phone": "9392052343"
   },
@@ -34,3 +35,10 @@
     "city": "Hydrabad"
   }
 ]
+=======
+    "password": "12345",
+    "phone": "9392052343"
+  }
+]
+
+>>>>>>> aa36d4b493bc5aecd06e257bc9614cfc2a753e76

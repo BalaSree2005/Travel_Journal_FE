@@ -9,7 +9,11 @@ function updateCountdown() {
 
     // Check if countdown has reached zero
     if (countdown < 0) {
+<<<<<<< HEAD
         window.location.href = '/user/login'; // Redirect to login page
+=======
+        window.location.href = '/login'; // Redirect to login page
+>>>>>>> aa36d4b493bc5aecd06e257bc9614cfc2a753e76
     }
 }
 
