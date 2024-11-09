@@ -105,6 +105,61 @@ nav img.logo:hover {
         height: 40px; /* Reduce size for smaller screens */
     }
 }
+/* Default styling (for larger screens) */
+.logout-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0px;
+    left: 656px; /* Adjust for larger screens */
+    height: 5%;
+    width: 10%;
+    background-color: #335b6c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    color: white;
+    background-color: #25444cd6; /* Darker color on hover */
+}
+
+/* Laptop screens (up to 1024px) */
+@media (max-width: 1024px) {
+    .logout-button {
+        left: 500px; /* Adjust to align properly */
+        height: 6%;
+        width: 15%;
+        font-size: 14px;
+    }
+}
+
+/* Tablet screens (up to 768px) */
+@media (max-width: 768px) {
+    .logout-button {
+        left: 300px; /* Adjust to align properly */
+        height: 7%;
+        width: 20%;
+        font-size: 14px;
+    }
+}
+
+/* Mobile screens (up to 480px) */
+@media (max-width: 480px) {
+    .logout-button {
+        left: auto;
+        right: 0; /* Align to the right of the screen */
+        width: 50%;
+        height: auto;
+        font-size: 12px;
+    }
+}
+
 
 
 
@@ -1995,5 +2050,130 @@ a:hover {
 
     .social-icons a {
         font-size: 1.2rem; /* Slightly smaller icons */
+    }
+}
+
+
+/*agent offers*/
+
+/* Basic styling */
+.offers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* h1, h2 {
+    color: #333;
+    text-align: center;
+} */
+
+.offer-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.offer-card {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.offer-card:hover {
+    transform: scale(1.05);
+}
+
+.offer-details {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    color: #555;
+}
+
+.offer-details li {
+    margin-bottom: 8px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.actions .btn {
+    padding: 8px 12px;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn-primary { background-color: #007bff; }
+.btn-danger { background-color: #dc3545; }
+.btn-info { background-color: #17a2b8; }
+.btn-success { background-color: #28a745; }
+
+.add-offer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+    .offer-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer-card {
+        width: 90%;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .offers-container {
+        padding: 10px;
+    }
+
+    /* h1, h2 {
+        font-size: 1.5em;
+    } */
+
+    .offer-card {
+        padding: 15px;
+    }
+
+    .form-control {
+        padding: 8px;
+    }
+
+    .btn {
+        padding: 6px 10px;
+        font-size: 0.9em;
     }
 }

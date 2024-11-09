@@ -1,0 +1,62 @@
+extends agentLayout
+
+block content-head
+    title Travel Journal - Offers
+
+block content-body
+    .offers-container
+        h1 Offers for Our Clients
+        p Explore exclusive offers curated just for your clients to enhance their travel experience.
+
+        .offer-list
+            each offer in offers
+                .offer-card
+                    h2= offer.title
+                    p= offer.description
+                    ul.offer-details
+                        li
+                            strong "Discount: "
+                            = offer.discount + "%"
+                        li
+                            strong "Valid From: "
+                            = offer.startDate
+                        li
+                            strong "Valid Until: "
+                            = offer.endDate
+                        li
+                            strong "Terms and Conditions: "
+                            = offer.terms
+
+                    .actions
+                        a.btn.btn-primary(href=`/offers/edit/${offer._id}`) Edit
+                        a.btn.btn-danger(href=`/offers/delete/${offer._id}`) Delete
+                        a.btn.btn-info(href=`/offers/view/${offer._id}`) View Details
+
+        .add-offer
+            h2 Add New Offer
+            form(action="/offers/create", method="POST")
+                .form-group
+                    label(for="title") Offer Title
+                    input#title.form-control(type="text", name="title" required)
+
+                .form-group
+                    label(for="description") Description
+                    textarea#description.form-control(name="description" rows="3" required)
+
+                .form-group
+                    label(for="discount") Discount Percentage
+                    input#discount.form-control(type="number", name="discount" min="0" max="100" required)
+
+                .form-group
+                    label(for="startDate") Start Date
+                    input#startDate.form-control(type="date", name="startDate" required)
+
+                .form-group
+                    label(for="endDate") End Date
+                    input#endDate.form-control(type="date", name="endDate" required)
+
+                .form-group
+                    label(for="terms") Terms and Conditions
+                    textarea#terms.form-control(name="terms" rows="4" required)
+
+                button.btn.btn-success(type="submit") Add Offer
